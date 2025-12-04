@@ -1,0 +1,53 @@
+@use "variables";
+
+/**========================================================================
+ **                            TYPOGRAPHY
+ *========================================================================**/
+
+@mixin poppins {
+    font-family: "Poppins", sans-serif;
+    font-weight: variables.$regular;
+    font-style: normal;
+}
+
+@mixin poppins--14px {
+    @include poppins();
+
+    font-size: 14px;
+}
+
+@mixin poppins--16px {
+    @include poppins();
+
+    font-size: 16px;
+}
+
+@mixin poppins--18px {
+    @include poppins();
+
+    font-size: 18px;
+}
+
+@mixin poppins--24px {
+    @include poppins();
+
+    font-size: 24px;
+}
+
+@mixin poppins--32px {
+    @include poppins();
+
+    font-size: 32px;
+}
+
+@mixin poppins--40px {
+    @include poppins();
+
+    font-size: 40px;
+}
+
+@mixin poppins--64px {
+    @include poppins();
+
+    font-size: 64px;
+}

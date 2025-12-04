@@ -1,0 +1,44 @@
+/**========================================================================
+ **                            WRAPPER STYLES
+ *========================================================================**/
+
+@mixin base-wrapper {
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+}
+
+.wrapper-1168px {
+    @include base-wrapper();
+    max-width: 1168px;
+}
+
+.wrapper-1200px {
+    @include base-wrapper();
+    max-width: 1200px;
+}
+
+.wrapper-1440px {
+    @include base-wrapper();
+    max-width: 1440px;
+}
+
+// .wrapper {
+//     margin: 0 auto;
+//     height: auto;
+//     width: auto;
+
+//     max-width: 1440px;
+
+//     &--ph120 {
+//         padding: 120px 0;
+//     }
+
+//     &--ph60 {
+//         padding: 60px 0;
+//     }
+
+//     &--ph336 {
+//         padding: 336px 0;
+//     }
+// }
