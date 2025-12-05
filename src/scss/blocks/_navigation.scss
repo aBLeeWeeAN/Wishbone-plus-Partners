@@ -1,0 +1,39 @@
+@use "../base/typography";
+
+.navigation {
+    display: flex;
+    column-gap: 32px;
+
+    align-items: center;
+
+    &__menu {
+        display: flex;
+        column-gap: 32px;
+    }
+
+    &__menu-item {
+        @include typography.poppins--16px;
+
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.025);
+        }
+
+        &:active {
+            transform: scale(1.0125);
+        }
+    }
+
+    &__menu-link {
+        backface-visibility: hidden;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__button-link {
+        //* NOTHING
+    }
+}

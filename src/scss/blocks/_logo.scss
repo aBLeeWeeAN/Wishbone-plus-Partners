@@ -1,0 +1,23 @@
+.logo {
+    display: inline-flex;
+
+    width: auto;
+    height: fit-content;
+
+    padding: 16px;
+
+    &__img {
+        width: auto;
+        height: max-content;
+    }
+
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.025);
+    }
+
+    &:active {
+        transform: scale(1.0125);
+    }
+}

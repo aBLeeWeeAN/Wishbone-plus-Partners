@@ -1,0 +1,31 @@
+@use "../base/colors";
+@use "../base/typography";
+
+.button-link {
+    @include typography.poppins--16px;
+
+    display: block;
+
+    max-width: 155px;
+    max-height: 46px;
+
+    letter-spacing: 0.4px;
+    line-height: 24px;
+
+    background-color: #1b1a1a;
+    color: #fff;
+
+    border-radius: 14px;
+    padding: 11px 20px;
+
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.025);
+    }
+
+    &:active {
+        transform: scale(1.0125);
+    }
+}

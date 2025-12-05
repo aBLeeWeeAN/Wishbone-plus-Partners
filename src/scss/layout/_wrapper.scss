@@ -2,25 +2,33 @@
  **                            WRAPPER STYLES
  *========================================================================**/
 
-@mixin base-wrapper {
+// @mixin base-wrapper {
+//     margin: 0 auto;
+//     height: auto;
+//     width: auto;
+// }
+
+.wrapper {
     margin: 0 auto;
     height: auto;
     width: auto;
-}
 
-.wrapper-1168px {
-    @include base-wrapper();
-    max-width: 1168px;
-}
+    &--1168px {
+        max-width: 1168px;
+    }
 
-.wrapper-1200px {
-    @include base-wrapper();
-    max-width: 1200px;
-}
+    &--1200px {
+        max-width: 1200px;
 
-.wrapper-1440px {
-    @include base-wrapper();
-    max-width: 1440px;
+        display: flex;
+        justify-content: space-between;
+
+        padding: 20px;
+    }
+
+    &--1440px {
+        max-width: 1440px;
+    }
 }
 
 // .wrapper {

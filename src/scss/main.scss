@@ -21,12 +21,26 @@
 @use "layout/grid";
 @use "layout/wrapper";
 
-@use "layout/header";
-@use "layout/footer";
+// @use "layout/header";
+// @use "layout/footer";
 
 //? --- BLOCKS
-
-@use "blocks/my_block_class";
+@use "blocks/logo";
+@use "blocks/navigation";
+@use "blocks/button_link";
 
 //? --- SECTIONS
-@use "sections/my_section";
+@use "sections/header";
+
+@use "sections/hero";
+@use "sections/our_firm";
+@use "sections/reeding_house";
+@use "sections/our_process";
+@use "sections/the_marble_staircase";
+@use "sections/prior_clients";
+@use "sections/the_swirling_staircase";
+@use "sections/featured_projects";
+@use "sections/meet_our_team";
+@use "sections/get_in_touch";
+
+@use "sections/footer";
