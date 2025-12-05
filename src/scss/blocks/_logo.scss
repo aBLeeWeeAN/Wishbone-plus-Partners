@@ -13,6 +13,11 @@
 
     & {
         transition: transform 0.3s ease-in-out;
+
+        transform: translateZ(0);
+        will-change: transform;
+
+        backface-visibility: hidden;
     }
 
     &:hover {
