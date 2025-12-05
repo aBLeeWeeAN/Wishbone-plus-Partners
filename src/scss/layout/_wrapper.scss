@@ -13,17 +13,27 @@
     height: auto;
     width: auto;
 
-    &--1168px {
-        max-width: 1168px;
-    }
-
-    &--1200px {
+    &--header {
         max-width: 1200px;
 
         display: flex;
         justify-content: space-between;
 
         padding: 20px;
+    }
+
+    &--hero {
+        max-width: 1440px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0 0 0 60px;
+    }
+
+    &--1168px {
+        max-width: 1168px;
     }
 
     &--1440px {

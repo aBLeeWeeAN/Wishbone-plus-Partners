@@ -6,8 +6,8 @@
 
     display: block;
 
-    max-width: 155px;
-    max-height: 46px;
+    max-width: max-content;
+    max-height: max-content;
 
     letter-spacing: 0.4px;
     line-height: 24px;
@@ -27,5 +27,29 @@
 
     &:active {
         transform: scale(1.0125);
+    }
+
+    &--hero {
+        max-width: max-content;
+        max-height: max-content;
+
+        padding: 11px 20px;
+
+        border-radius: 0;
+        border: solid transparent 4px;
+
+        background-color: transparent;
+        color: #1b1a1a;
+
+        transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.025);
+            border-color: #1b1a1a;
+        }
+
+        &:active {
+            transform: scale(1.025);
+        }
     }
 }
