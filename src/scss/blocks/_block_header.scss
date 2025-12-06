@@ -105,4 +105,21 @@
             color: #1b1a1a;
         }
     }
+
+    &--prior-clients {
+        text-align: left;
+
+        .block-header__header {
+            @include typography.poppins--32px;
+
+            line-height: 38px;
+            letter-spacing: 0;
+
+            color: #fff;
+        }
+
+        .block-header__tagline {
+            color: #ece7e4;
+        }
+    }
 }

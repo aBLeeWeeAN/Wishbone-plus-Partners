@@ -1,3 +1,62 @@
-#prior-clients {
+@use "../base/typography";
+
+.prior-clients {
     background-color: #403e3b;
+
+    &__text-block {
+        max-width: 460px;
+
+        display: flex;
+        flex-direction: column;
+
+        row-gap: 14px;
+    }
+
+    &__icons-block {
+        // max-width: 432px;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(128px, 1fr));
+        // grid-auto-rows: minmax(500px, auto);
+        // grid-auto-columns: minmax(100px, auto);
+
+        gap: 96px;
+    }
+
+    &__img-link {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        // width: 100%;
+        // height: 100%;
+
+        transition: transform 0.3s ease-in-out;
+        will-change: transform;
+
+        transform: translateZ(0);
+        backface-visibility: hidden;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: scale(1.025);
+        }
+    }
+
+    &__img {
+        //* NOTHING
+    }
+
+    &__pg {
+        @include typography.poppins--16px;
+
+        line-height: 24px;
+        letter-spacing: 0;
+
+        color: #ece7e4;
+    }
 }
