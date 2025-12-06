@@ -1,3 +1,63 @@
-#footer {
+@use "../base/typography";
+
+.footer {
     background-color: #f7f7f7;
+
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+
+        row-gap: 20px;
+
+        @include typography.poppins--14px;
+
+        line-height: 20px;
+        letter-spacing: 0;
+
+        color: #645c55;
+    }
+
+    &__link {
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &--icon {
+            display: block;
+            line-height: 0;
+        }
+    }
+
+    &__social-icons-block {
+        display: flex;
+        align-items: center;
+
+        column-gap: 20px;
+    }
+
+    &__copyright-block {
+        //* NOTHING
+    }
+
+    &__pg {
+        //* NOTHING
+    }
+
+    &__icon {
+        aspect-ratio: 1 / 1;
+
+        transition: transform 0.3s ease-in-out;
+        will-change: transform;
+
+        transform: translateZ(0);
+        backface-visibility: hidden;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(1.05);
+        }
+    }
 }

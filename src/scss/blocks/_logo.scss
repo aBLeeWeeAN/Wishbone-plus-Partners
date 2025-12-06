@@ -7,8 +7,10 @@
     padding: 16px;
 
     &__img {
+        aspect-ratio: 220 / 19;
+
         width: auto;
-        height: max-content;
+        height: auto;
     }
 
     & {
@@ -26,5 +28,13 @@
 
     &:active {
         transform: scale(1.0125);
+    }
+
+    &--footer {
+        padding: 0;
+
+        .logo__img {
+            width: 256px;
+        }
     }
 }

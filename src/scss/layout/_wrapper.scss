@@ -89,7 +89,7 @@
         align-items: center;
 
         // padding: 0 0 0 60px;
-        padding: 100px 0;
+        padding: 100px 144px 100px 0;
     }
 
     &--get-in-touch {
@@ -128,6 +128,16 @@
 
         // padding: 0 0 0 60px;
         padding: 100px 0;
+    }
+
+    &--footer {
+        max-width: 1168px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+
+        padding: 60px 0;
     }
 
     // &--1168px {
