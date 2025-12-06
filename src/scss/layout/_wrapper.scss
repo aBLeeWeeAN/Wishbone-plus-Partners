@@ -104,6 +104,18 @@
         padding: 100px 0;
     }
 
+    &--featured-projects {
+        max-width: 1200px;
+
+        display: flex;
+        flex-direction: column;
+
+        row-gap: 42px;
+
+        // padding: 0 0 0 60px;
+        padding: 120px 16px 100px 16px;
+    }
+
     // &--1168px {
     //     max-width: 1168px;
     // }

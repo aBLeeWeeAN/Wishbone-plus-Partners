@@ -122,4 +122,29 @@
             color: #ece7e4;
         }
     }
+
+    &--featured-projects {
+        text-align: left;
+        row-gap: 16px;
+
+        .block-header__header {
+            @include typography.poppins--40px;
+
+            line-height: 42px;
+            letter-spacing: 0;
+
+            color: #1b1a1a;
+        }
+
+        .block-header__pg {
+            @include typography.poppins--24px;
+
+            line-height: 30px;
+            letter-spacing: 0;
+
+            color: #645c55;
+
+            max-width: 584px;
+        }
+    }
 }
