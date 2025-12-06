@@ -53,4 +53,42 @@
         min-width: fit-content;
         height: auto;
     }
+
+    &--house-and-staircase {
+        max-width: 285px;
+
+        .block-header__header {
+            @include typography.poppins--14px;
+
+            line-height: 20px;
+            letter-spacing: 2px;
+
+            color: #403e3b;
+
+            text-transform: uppercase;
+        }
+
+        .block-header__pg {
+            @include typography.poppins--16px;
+
+            line-height: 24px;
+            letter-spacing: 0;
+
+            color: #645c55;
+        }
+    }
+
+    &--our-process {
+        text-align: center;
+        row-gap: 14px;
+
+        .block-header__header {
+            @include typography.poppins--40px;
+
+            line-height: 42px;
+            letter-spacing: 0;
+
+            color: #1b1a1a;
+        }
+    }
 }

@@ -37,7 +37,44 @@
 
         display: flex;
         justify-content: space-between;
-        align-items: top;
+        align-items: start;
+
+        // padding: 0 0 0 60px;
+        padding: 100px 0;
+    }
+
+    &--reeding-house-and-marble-staircase {
+        max-width: 1440px;
+
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        // padding: 0 0 0 60px;
+        padding: 266px 60px;
+    }
+
+    &--swirling-staircase {
+        max-width: 1440px;
+
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        // padding: 0 0 0 60px;
+        padding: 266px 60px;
+    }
+
+    &--our-process {
+        max-width: 1168px;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        row-gap: 40px;
 
         // padding: 0 0 0 60px;
         padding: 100px 0;

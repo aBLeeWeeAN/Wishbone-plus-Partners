@@ -6,6 +6,24 @@
 
     align-items: center;
 
+    cursor: pointer;
+
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
+
+    transform: translateZ(0);
+    backface-visibility: hidden;
+
+    transform-origin: 0 0;
+
+    &:hover {
+        transform: scale(1.025);
+    }
+
+    &:active {
+        transform: scale(1.0125);
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
