@@ -32,13 +32,24 @@
         padding: 0 0 0 60px;
     }
 
-    &--1168px {
-        max-width: 1168px;
+    &--our-firm {
+        max-width: 768px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+
+        // padding: 0 0 0 60px;
+        padding: 100px 0;
     }
 
-    &--1440px {
-        max-width: 1440px;
-    }
+    // &--1168px {
+    //     max-width: 1168px;
+    // }
+
+    // &--1440px {
+    //     max-width: 1440px;
+    // }
 }
 
 // .wrapper {

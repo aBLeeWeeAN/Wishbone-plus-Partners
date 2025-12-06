@@ -39,4 +39,18 @@
         //     color: #1b1a1a;
         // }
     }
+
+    &--our-firm {
+        @include typography.poppins--32px;
+
+        line-height: 38px;
+        letter-spacing: 0;
+
+        color: #403e3b;
+
+        display: inline;
+
+        min-width: fit-content;
+        height: auto;
+    }
 }

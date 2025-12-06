@@ -1,3 +1,23 @@
-#our-firm {
+@use "../base/typography";
+
+.our-firm {
     background-color: #fff;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        row-gap: 10px;
+
+        max-width: 500px;
+    }
+
+    &__pg {
+        @include typography.poppins--16px;
+
+        line-height: 24px;
+        letter-spacing: 0;
+
+        color: #403e3b;
+    }
 }

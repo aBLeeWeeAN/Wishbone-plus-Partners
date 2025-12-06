@@ -1,0 +1,31 @@
+@use "../base/typography";
+
+.team-member {
+    display: flex;
+    column-gap: 30px;
+
+    align-items: center;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__full-name {
+        @include typography.poppins--18px;
+
+        line-height: 26px;
+        letter-spacing: 0;
+
+        color: #1b1a1a;
+    }
+
+    &__work-position {
+        @include typography.poppins--14px;
+
+        line-height: 14px;
+        letter-spacing: 0;
+
+        color: #645c55;
+    }
+}
