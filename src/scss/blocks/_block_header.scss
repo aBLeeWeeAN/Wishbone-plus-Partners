@@ -147,4 +147,29 @@
             max-width: 584px;
         }
     }
+
+    &--meet-our-team {
+        text-align: left;
+        row-gap: 14px;
+
+        .block-header__header {
+            @include typography.poppins--32px;
+
+            line-height: 38px;
+            letter-spacing: 0;
+
+            color: #403e3b;
+        }
+
+        .block-header__pg {
+            @include typography.poppins--16px;
+
+            line-height: 24px;
+            letter-spacing: 0;
+
+            color: #645c55;
+
+            max-width: 374px;
+        }
+    }
 }
