@@ -9,9 +9,10 @@
 
         <!--* CSS code imports --->
         <link rel="stylesheet" href="/public/css/main.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     </head>
     <body>
-        <header id="header" class="header">
+        <header id="header" class="header" data-aos="zoom-out">
             <div class="wrapper wrapper--header">
                 <a class="logo" href="#header">
                     <img class="logo__img" src="/public/assets/images/icons/header/logo.svg" alt="Logo" />
@@ -30,7 +31,7 @@
         </header>
         <section id="hero" class="hero">
             <div class="wrapper wrapper--hero">
-                <div class="hero__text">
+                <div class="hero__text" data-aos="fade-right">
                     <div class="block-header block-header--hero">
                         <h3 class="block-header__tagline">Wishbone+Partners</h3>
                         <h1 class="block-header__header">The home of beautiful architecture.</h1>
@@ -42,10 +43,10 @@
                     </p>
                     <a class="hero__button-link button-link button-link--hero" href="#!">Read more</a>
                 </div>
-                <img class="hero__img" src="/public/assets/images/hero/main_image.png" alt="Hero main image" />
+                <img class="hero__img" src="/public/assets/images/hero/main_image.png" alt="Hero main image" data-aos="fade-left" />
             </div>
         </section>
-        <section id="our-firm" class="our-firm">
+        <section id="our-firm" class="our-firm" data-aos="fade-up">
             <div class="wrapper wrapper--our-firm">
                 <h2 class="block-header block-header--our-firm">Our firm</h2>
                 <div class="our-firm__content">
@@ -77,7 +78,7 @@
                 </div>
             </div>
         </section>
-        <section id="reeding-house" class="reeding-house">
+        <section id="reeding-house" class="reeding-house" data-aos="zoom-out-up">
             <div class="wrapper wrapper--reeding-house-and-marble-staircase">
                 <div class="block-header block-header--house-and-staircase">
                     <h3 class="block-header__header">Reeding house</h3>
@@ -85,7 +86,7 @@
                 </div>
             </div>
         </section>
-        <section id="our-process" class="our-process">
+        <section id="our-process" class="our-process" data-aos="fade-up">
             <div class="wrapper wrapper--our-process">
                 <div class="block-header block-header--our-process">
                     <h3 class="block-header__tagline">Our process</h3>
@@ -118,7 +119,7 @@
                 </div>
             </div>
         </section>
-        <section id="the-marble-staircase" class="the-marble-staircase">
+        <section id="the-marble-staircase" class="the-marble-staircase" data-aos="zoom-out-up">
             <div class="wrapper wrapper--reeding-house-and-marble-staircase">
                 <div class="block-header block-header--house-and-staircase">
                     <h3 class="block-header__header">The marble staircase</h3>
@@ -128,7 +129,7 @@
         </section>
         <section id="prior-clients" class="prior-clients">
             <div class="wrapper wrapper--prior-clients">
-                <div class="prior-clients__text-block">
+                <div class="prior-clients__text-block" data-aos="zoom-out-right">
                     <div class="block-header block-header--prior-clients">
                         <h3 class="block-header__tagline">Prior clients</h3>
                         <h2 class="block-header__header">Happy customers.</h2>
@@ -138,7 +139,7 @@
                         elit et nisi ultrices, ut faucibus orci tincidunt.
                     </p>
                 </div>
-                <div class="prior-clients__icons-block">
+                <div class="prior-clients__icons-block" data-aos="zoom-out-left">
                     <a href="#!" class="prior-clients__img-link">
                         <img
                             class="prior-clients__img"
@@ -160,7 +161,7 @@
                 </div>
             </div>
         </section>
-        <section id="the-swirling-staircase" class="the-swirling-staircase">
+        <section id="the-swirling-staircase" class="the-swirling-staircase" data-aos="zoom-out-up">
             <div class="wrapper wrapper--swirling-staircase">
                 <div class="block-header block-header--house-and-staircase">
                     <h3 class="block-header__header">The swirling staircase</h3>
@@ -168,14 +169,107 @@
                 </div>
             </div>
         </section>
-        <section id="featured-projects" class="featured-projects">
+        <section id="featured-projects" class="featured-projects" data-aos="fade-up">
             <div class="wrapper wrapper--featured-projects">
                 <div class="block-header block-header--featured-projects">
                     <h2 class="block-header__header">Featured projects</h2>
                     <p class="block-header__pg">Some of the latest and greatest projects from us here at Wishbone+Partners.</p>
                 </div>
-                <div class="featured-projects__content">
+                <div class="featured-projects__content" x-data="{ expanded: false }">
                     <div class="featured-projects__projects-block">
+                        <div class="card card--project" data-aos="flip-up">
+                            <img src="/public/assets/images/featured_projects/first.png" alt="First project photo" class="card__img" />
+                            <div class="card__content">
+                                <div class="card__header-block">
+                                    <h4 class="card__tagline">New York</h4>
+                                    <h3 class="card__header">Big Road Brewery</h3>
+                                </div>
+                                <a href="#!" class="button-link">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card card--project" data-aos="flip-up">
+                            <img src="/public/assets/images/featured_projects/second.png" alt="Second project photo" class="card__img" />
+                            <div class="card__content">
+                                <div class="card__header-block">
+                                    <h4 class="card__tagline">New York</h4>
+                                    <h3 class="card__header">Big Road Brewery</h3>
+                                </div>
+                                <a href="#!" class="button-link">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card card--project" data-aos="flip-up">
+                            <img src="/public/assets/images/featured_projects/third.png" alt="Third project photo" class="card__img" />
+                            <div class="card__content">
+                                <div class="card__header-block">
+                                    <h4 class="card__tagline">New York</h4>
+                                    <h3 class="card__header">Big Road Brewery</h3>
+                                </div>
+                                <a href="#!" class="button-link">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button-link button-link--hero" @click="expanded = !expanded">View all projects</button>
+                    <div class="featured-projects__projects-block" x-show="expanded" x-collapse.duration.500ms>
+                        <div class="card card--project">
+                            <img src="/public/assets/images/featured_projects/first.png" alt="First project photo" class="card__img" />
+                            <div class="card__content">
+                                <div class="card__header-block">
+                                    <h4 class="card__tagline">New York</h4>
+                                    <h3 class="card__header">Big Road Brewery</h3>
+                                </div>
+                                <a href="#!" class="button-link">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card card--project">
+                            <img src="/public/assets/images/featured_projects/second.png" alt="Second project photo" class="card__img" />
+                            <div class="card__content">
+                                <div class="card__header-block">
+                                    <h4 class="card__tagline">New York</h4>
+                                    <h3 class="card__header">Big Road Brewery</h3>
+                                </div>
+                                <a href="#!" class="button-link">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card card--project">
+                            <img src="/public/assets/images/featured_projects/third.png" alt="Third project photo" class="card__img" />
+                            <div class="card__content">
+                                <div class="card__header-block">
+                                    <h4 class="card__tagline">New York</h4>
+                                    <h3 class="card__header">Big Road Brewery</h3>
+                                </div>
+                                <a href="#!" class="button-link">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card card--project">
+                            <img src="/public/assets/images/featured_projects/first.png" alt="First project photo" class="card__img" />
+                            <div class="card__content">
+                                <div class="card__header-block">
+                                    <h4 class="card__tagline">New York</h4>
+                                    <h3 class="card__header">Big Road Brewery</h3>
+                                </div>
+                                <a href="#!" class="button-link">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card card--project">
+                            <img src="/public/assets/images/featured_projects/second.png" alt="Second project photo" class="card__img" />
+                            <div class="card__content">
+                                <div class="card__header-block">
+                                    <h4 class="card__tagline">New York</h4>
+                                    <h3 class="card__header">Big Road Brewery</h3>
+                                </div>
+                                <a href="#!" class="button-link">Read more</a>
+                            </div>
+                        </div>
+                        <div class="card card--project">
+                            <img src="/public/assets/images/featured_projects/third.png" alt="Third project photo" class="card__img" />
+                            <div class="card__content">
+                                <div class="card__header-block">
+                                    <h4 class="card__tagline">New York</h4>
+                                    <h3 class="card__header">Big Road Brewery</h3>
+                                </div>
+                                <a href="#!" class="button-link">Read more</a>
+                            </div>
+                        </div>
                         <div class="card card--project">
                             <img src="/public/assets/images/featured_projects/first.png" alt="First project photo" class="card__img" />
                             <div class="card__content">
@@ -207,13 +301,13 @@
                             </div>
                         </div>
                     </div>
-                    <a class="button-link button-link--hero" href="#!">View all projects</a>
+                    <!-- <a class="button-link button-link--hero" href="#!">View all projects</a> -->
                 </div>
             </div>
         </section>
         <section id="meet-our-team" class="meet-our-team">
             <div class="wrapper wrapper--meet-our-team">
-                <div class="meet-our-team__text-block">
+                <div class="meet-our-team__text-block" data-aos="fade-down-right">
                     <div class="block-header block-header--meet-our-team">
                         <h2 class="block-header__header">Meet our team</h2>
                         <p class="block-header__pg">
@@ -223,7 +317,7 @@
                     </div>
                     <a class="button-link button-link--hero" href="#!">See team</a>
                 </div>
-                <div class="meet-our-team__team-icons-block">
+                <div class="meet-our-team__team-icons-block" data-aos="fade-up-left">
                     <div class="team-member team-member--meet-our-team">
                         <img src="/public/assets/images/our_team/stephen_collier.png" alt="Stephen Collier Photo" />
                         <div>
@@ -262,7 +356,7 @@
                 </div>
             </div>
         </section>
-        <section id="get-in-touch" class="get-in-touch">
+        <section id="get-in-touch" class="get-in-touch" data-aos="fade-up">
             <div class="wrapper wrapper--get-in-touch">
                 <div class="block-header block-header--get-in-touch">
                     <h3 class="block-header__tagline">Get in touch</h3>
@@ -271,7 +365,7 @@
                 <a href="#!" class="button-link button-link--hero">Get in touch</a>
             </div>
         </section>
-        <footer id="footer" class="footer">
+        <footer id="footer" class="footer" data-aos="zoom-out-up">
             <div class="wrapper wrapper--footer">
                 <div class="footer__text-block">
                     <a class="logo logo--footer" href="#header"
@@ -300,5 +394,13 @@
 
         <!--* JS code imports --->
         <script src="/public/js/main.js"></script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({ once: true });
+        </script>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </body>
 </html>
