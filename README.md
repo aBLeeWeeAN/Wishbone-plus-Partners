@@ -22,7 +22,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![Unlicense License][license-shield]][license-url]
+[![MIT License][license-shield]][license-url]
 
 
 
@@ -287,6 +287,5 @@ This project is [MIT][license-url] licensed.
 
 
 [WordPress-url]: https://wordpress.com/
-
 
 
