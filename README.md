@@ -29,17 +29,17 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <h1 align="center">Wishbone Plus Partners (Website)</h1>
+  <h1 align="center">Wishbone+Partners (Website)</h1>
 
   <p align="center">
-    A multi-page website built using a Figma layout. It supports desktops, tablets and phones.
+    A desktop-focused single-page website built with HTML and Sass, using Alpine.js for collapsible sections and AOS for scroll animations. Features custom CSS transitions and is not optimized for mobile.
     <br />
     <br />
-    <a href="https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3">Original Layout</a>
+    <a href="https://verstaem.online/projects/wishbone/">Original Layout</a>
     &middot;
-    <a href="https://ableeweean.github.io/Space-Tourism-Website/">View Demo</a>
+    <a href="https://ableeweean.github.io/Wishbone-plus-Partners/">View Demo</a>
     &middot;
-    <a href="https://github.com/aBLeeWeeAN/Space-Tourism-Website/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/aBLeeWeeAN/Wishbone-plus-Partners/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
   </p>
 </div>
 
@@ -77,17 +77,22 @@
 
 This project is part of my portfolio and demonstrates my skills in creating websites based on client-provided mockups - either in [Figma](https://www.figma.com/) or [Photoshop](https://www.adobe.com/products/photoshop.html).
 
-The main goal was to build a clean, high-performance front-end foundation without relying on external UI frameworks or a CMS backend.
+The primary objective was to build a sleek, animated landing page with a focus on aesthetic details and smooth interactive elements, based on a desktop-only design mockup.
 
 Key technical notes:
 
-* **Responsiveness**: Implemented purely with CSS media queries.
-* **Content**: All content is static (no [WordPress][WordPress-url] or similar CMS).
-* **Build Process**: [Sass/SCSS][Sass-url] and [TypeScript][TypeScript-url] source files are compiled into standard [CSS][CSS-url] and [JavaScript][JavaScript-url]. This approach keeps the source code organized and makes the project versatile as a starting template for other front-end solutions.
+* **Layout & Responsiveness**: Implemented with a fluid layout that gracefully adjusts across standard desktop and laptop screens. The site is not optimized for mobile devices as it was based on a single desktop mockup.
+* **Styling & Architecture**: Styled with [Sass/SCSS][Sass-url] primarily for file organization by sections, with variables and mixins for typography and consistent styling.
+* **Animations**: Features multiple animation layers:
+    * Scroll-triggered animations via the [AOS (Animate On Scroll)][AOS-url] library.
+    * Interactive collapse/expand functionality in specific sections using [Alpine.js][Alpine.js-url].
+    * Custom CSS transitions for hover states on buttons, links, and images.
+* **JavaScript Implementation**: No custom JavaScript was written; all interactivity is achieved through the AOS and Alpine.js libraries.
+* **Build Approach**: This project combines preprocessed CSS architecture with lightweight JavaScript libraries to create a polished, desktop-focused front-end experience without custom scripting.
 
 You can see a **preview of the website** in the image below:
 
-[![Space Tourism Website Preview][website-preview]](https://ableeweean.github.io/Space-Tourism-Website/)
+[![Wishbone+Partners (Website) Preview][website-preview]](https://ableeweean.github.io/Wishbone-plus-Partners/)
 
 
 
@@ -99,9 +104,10 @@ This website is made using the following technologies:
 * [![CSS][CSS-logo]][CSS-url]
 * [![JavaScript][JavaScript-logo]][JavaScript-url]
 * [![Sass][Sass-logo]][Sass-url]
-* [![TypeScript][TypeScript-logo]][TypeScript-url]
+* [![Alpine.js][Alpine.js-logo]][Alpine.js-url]
 * [![Node.js][Node.js-logo]][Node.js-url]
 * [![Git][Git-logo]][Git-url]
+* [AOS (Animate On Scroll)][AOS-url] library.
 
 
 
@@ -122,7 +128,7 @@ Below is a list of browsers in which this website was tested and rendered correc
 > [!IMPORTANT]
 > Browser compatibility was verified for the 1.0.0 release. The site displayed correctly in the latest versions of all major browsers at that time.
 > 
-> **Last verification date: 3 December 2025**
+> **Last verification date: 9 December 2025**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -142,7 +148,7 @@ First, install [Node.js][Node.js-url]. Then, download this repository as a ZIP a
 * git
 
   ```sh
-  git clone https://github.com/aBLeeWeeAN/Space-Tourism-Website
+  git clone https://github.com/aBLeeWeeAN/Wishbone-plus-Partners
   ```
 
 Navigate to the project folder in your terminal and run the following command to install all project dependencies:
@@ -157,7 +163,7 @@ Navigate to the project folder in your terminal and run the following command to
 
 _Please follow the steps below to build the static site files._
 
-To compile Sass/SCSS files into CSS and TypeScript files into JavaScript, run the following build command (you can ignore any warnings):
+To compile Sass/SCSS files into CSS, run the following build command (you can ignore any warnings):
 
 * npm
 
@@ -179,7 +185,7 @@ Alternatively, to launch a local development server, use the following command:
 * npm
 
   ```sh
-  npm run serve
+  npm run server
   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -223,8 +229,8 @@ This project is [MIT][license-url] licensed.
 [Sass-logo]: https://img.shields.io/badge/Sass-C69?logo=sass&logoColor=fff&style=for-the-badge
 [Sass-url]: https://sass-lang.com/
 
-[TypeScript-logo]: https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=for-the-badge
-[TypeScript-url]: https://www.typescriptlang.org/
+[Alpine.js-logo]: https://img.shields.io/badge/Alpine.js-8BC0D0?logo=alpinedotjs&logoColor=fff&style=for-the-badge
+[Alpine.js-url]: https://alpinejs.dev/
 
 [Node.js-logo]: https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white&style=for-the-badge
 [Node.js-url]: https://nodejs.org/
@@ -232,22 +238,24 @@ This project is [MIT][license-url] licensed.
 [Git-logo]: https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff&style=for-the-badge
 [Git-url]: https://git-scm.com/
 
+[AOS-url]: https://github.com/michalsnik/aos
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/aBLeeWeeAN/Space-Tourism-Website.svg?style=for-the-badge
-[contributors-url]: https://github.com/aBLeeWeeAN/Space-Tourism-Website/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/aBLeeWeeAN/Space-Tourism-Website.svg?style=for-the-badge
-[forks-url]: https://github.com/aBLeeWeeAN/Space-Tourism-Website/network/members
+[contributors-shield]: https://img.shields.io/github/contributors/aBLeeWeeAN/Wishbone-plus-Partners.svg?style=for-the-badge
+[contributors-url]: https://github.com/aBLeeWeeAN/Wishbone-plus-Partners/graphs/contributors
 
-[stars-shield]: https://img.shields.io/github/stars/aBLeeWeeAN/Space-Tourism-Website.svg?style=for-the-badge
-[stars-url]: https://github.com/aBLeeWeeAN/Space-Tourism-Website/stargazers
+[forks-shield]: https://img.shields.io/github/forks/aBLeeWeeAN/Wishbone-plus-Partners.svg?style=for-the-badge
+[forks-url]: https://github.com/aBLeeWeeAN/Wishbone-plus-Partners/network/members
 
-[issues-shield]: https://img.shields.io/github/issues/aBLeeWeeAN/Space-Tourism-Website.svg?style=for-the-badge
-[issues-url]: https://github.com/aBLeeWeeAN/Space-Tourism-Website/issues
+[stars-shield]: https://img.shields.io/github/stars/aBLeeWeeAN/Wishbone-plus-Partners.svg?style=for-the-badge
+[stars-url]: https://github.com/aBLeeWeeAN/Wishbone-plus-Partners/stargazers
 
-[license-shield]: https://img.shields.io/github/license/aBLeeWeeAN/Space-Tourism-Website.svg?style=for-the-badge
-[license-url]: https://github.com/aBLeeWeeAN/Space-Tourism-Website/blob/master/LICENSE
+[issues-shield]: https://img.shields.io/github/issues/aBLeeWeeAN/Wishbone-plus-Partners.svg?style=for-the-badge
+[issues-url]: https://github.com/aBLeeWeeAN/Wishbone-plus-Partners/issues
+
+[license-shield]: https://img.shields.io/github/license/aBLeeWeeAN/Wishbone-plus-Partners.svg?style=for-the-badge
+[license-url]: https://github.com/aBLeeWeeAN/Wishbone-plus-Partners/blob/master/LICENSE
 
 
 
